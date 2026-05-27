@@ -76,7 +76,7 @@ export default function ContactPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-zinc-950">
+    <main className="min-h-screen bg-white">
       <Navbar />
       
       <section className="pt-32 pb-24 px-6">
@@ -88,11 +88,11 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Get In Touch</p>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-zinc-100 mb-6">
+            <p className="text-sm font-medium text-blue-600 uppercase tracking-wider mb-4">Get In Touch</p>
+            <h1 className="font-display text-5xl md:text-6xl font-bold text-slate-900 mb-6">
               Let&apos;s Connect
             </h1>
-            <p className="text-lg text-zinc-500 max-w-2xl mx-auto text-balance">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto text-balance">
               Have a project in mind? Want to discuss your technology needs? Reach out using any of the methods below. I&apos;d love to hear from you.
             </p>
           </motion.div>
@@ -102,12 +102,12 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-16 p-8 rounded-2xl border border-zinc-800/50 bg-zinc-900/50"
+            className="mb-16 p-8 rounded-2xl border border-slate-200 bg-white shadow-lg"
           >
-            <h2 className="font-display text-3xl font-bold text-zinc-100 mb-2">
+            <h2 className="font-display text-3xl font-bold text-slate-900 mb-2">
               Tell Us About Your Project
             </h2>
-            <p className="text-zinc-500 mb-8">
+            <p className="text-slate-600 mb-8">
               Fill in the details below and we&apos;ll get back to you shortly with a customized proposal.
             </p>
 
@@ -115,7 +115,7 @@ export default function ContactPage() {
               {/* Name and Email Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-zinc-300 mb-2">
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
                     Your Name *
                   </label>
                   <input
@@ -125,11 +125,11 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-zinc-300 mb-2">
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -139,7 +139,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
               {/* Phone and Company Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-zinc-300 mb-2">
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -157,11 +157,11 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     placeholder="+91 XXXXXXXXXX"
-                    className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-zinc-300 mb-2">
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
                     Company Name (Optional)
                   </label>
                   <input
@@ -170,14 +170,14 @@ export default function ContactPage() {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Your Company"
-                    className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                   />
                 </div>
               </div>
 
               {/* Service Type */}
               <div>
-                <label className="block text-sm font-medium text-zinc-300 mb-2">
+                <label className="block text-sm font-medium text-slate-700 mb-2">
                   What Service Do You Need? *
                 </label>
                 <select
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   value={formData.serviceType}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 focus:outline-none focus:border-zinc-600 transition-colors"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                 >
                   <option value="">Select a service...</option>
                   <option value="Web Development">Web Development</option>
@@ -200,7 +200,7 @@ export default function ContactPage() {
 
               {/* Project Description */}
               <div>
-                <label className="block text-sm font-medium text-zinc-300 mb-2">
+                <label className="block text-sm font-medium text-slate-700 mb-2">
                   Project Details & Requirements *
                 </label>
                 <textarea
@@ -210,7 +210,7 @@ export default function ContactPage() {
                   required
                   placeholder="Describe your project, timeline, budget, and any specific requirements..."
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-600 transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors resize-none"
                 />
               </div>
 
@@ -220,7 +220,7 @@ export default function ContactPage() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={submitted}
-                className="w-full py-3 px-6 rounded-lg bg-zinc-100 text-zinc-900 font-medium hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full py-3 px-6 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shadow-lg hover:shadow-xl"
               >
                 <Send className="w-4 h-4" />
                 {submitted ? 'Message Sent!' : 'Send Project Details'}
@@ -230,7 +230,7 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="p-4 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-300 text-center"
+                  className="p-4 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 text-center"
                 >
                   Thank you! Your inquiry has been sent. We&apos;ll review your details and get back to you shortly.
                 </motion.div>
@@ -252,23 +252,23 @@ export default function ContactPage() {
                   className="h-full"
                 >
                   <Link href={item.href} target={item.href.startsWith('http') ? '_blank' : '_self'}>
-                    <div className="h-full p-6 rounded-2xl border border-zinc-800/50 bg-zinc-900/50 hover:border-zinc-700/50 transition-all duration-300 cursor-pointer group">
+                    <div className="h-full p-6 rounded-2xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-300 cursor-pointer group">
                       <motion.div
-                        className="w-12 h-12 rounded-xl bg-zinc-800/80 flex items-center justify-center mb-4 group-hover:bg-zinc-700 transition-colors"
+                        className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors"
                         whileHover={{ scale: 1.1 }}
                       >
-                        <Icon className="w-6 h-6 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
+                        <Icon className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition-colors" />
                       </motion.div>
                       
-                      <h3 className="font-heading font-semibold text-zinc-100 mb-2">
+                      <h3 className="font-heading font-semibold text-slate-900 mb-2">
                         {item.label}
                       </h3>
                       
-                      <p className="text-sm text-zinc-500 mb-3">
+                      <p className="text-sm text-slate-600 mb-3">
                         {item.description}
                       </p>
                       
-                      <p className="text-base font-medium text-zinc-300 group-hover:text-zinc-100 transition-colors break-all">
+                      <p className="text-base font-medium text-slate-700 group-hover:text-blue-600 transition-colors break-all">
                         {item.value}
                       </p>
                     </div>
@@ -283,12 +283,12 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-16 pt-16 border-t border-zinc-800/50"
+            className="mt-16 pt-16 border-t border-slate-200"
           >
             <div className="grid md:grid-cols-2 gap-12">
               {/* Why Contact Us */}
               <div>
-                <h2 className="font-display text-2xl font-bold text-zinc-100 mb-6">
+                <h2 className="font-display text-2xl font-bold text-slate-900 mb-6">
                   Why work with us?
                 </h2>
                 <ul className="space-y-4">
@@ -307,10 +307,10 @@ export default function ContactPage() {
                       transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
                       className="flex items-start gap-3"
                     >
-                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-zinc-700 to-zinc-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <div className="w-2 h-2 rounded-full bg-zinc-100" />
+                      <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div className="w-2 h-2 rounded-full bg-white" />
                       </div>
-                      <span className="text-zinc-400">{item}</span>
+                      <span className="text-slate-600">{item}</span>
                     </motion.li>
                   ))}
                 </ul>
@@ -318,7 +318,7 @@ export default function ContactPage() {
 
               {/* Quick Response */}
               <div>
-                <h2 className="font-display text-2xl font-bold text-zinc-100 mb-6">
+                <h2 className="font-display text-2xl font-bold text-slate-900 mb-6">
                   Response Times
                 </h2>
                 <div className="space-y-4">
@@ -333,10 +333,10 @@ export default function ContactPage() {
                       initial={{ opacity: 0, x: 10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
-                      className="flex items-center justify-between p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/50 hover:border-zinc-700/50 transition-all"
+                      className="flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all"
                     >
-                      <span className="text-zinc-300 font-medium">{item.method}</span>
-                      <span className="text-sm text-zinc-500">{item.time}</span>
+                      <span className="text-slate-700 font-medium">{item.method}</span>
+                      <span className="text-sm text-slate-500">{item.time}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -353,7 +353,7 @@ export default function ContactPage() {
           >
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-colors text-zinc-300 hover:text-zinc-100"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors text-white shadow-lg hover:shadow-xl"
             >
               <span>Back to Home</span>
               <ArrowRight className="w-4 h-4" />
