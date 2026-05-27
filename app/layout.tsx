@@ -47,7 +47,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${manrope.variable} font-sans antialiased bg-zinc-950 text-zinc-100`}>
+      <body className={`${manrope.variable} font-sans antialiased bg-white text-slate-900`}>
         <LenisProvider>{children}</LenisProvider>
         <Analytics />
       </body>
