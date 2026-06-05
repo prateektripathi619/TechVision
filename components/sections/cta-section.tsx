@@ -12,7 +12,7 @@ export function CtaSection() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/contact">
-            <LiquidCtaButton>Schedule Consultation</LiquidCtaButton>
+            <LiquidCtaButton>Contact for Query</LiquidCtaButton>
           </Link>
           <Link
             href="#services"

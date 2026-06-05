@@ -16,7 +16,9 @@ export function HeroSection() {
         {/* Badge - customize your announcement */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 mb-8">
           <Sparkles className="w-4 h-4 text-blue-600" />
-          <span className="text-sm text-blue-700 font-medium">Custom Solutions for Modern Businesses</span>
+          <span className="text-sm text-blue-700 font-medium">
+            We Build Digital Experiences That Grow Your Business
+          </span>
         </div>
 
         {/* Headline - customize your value proposition */}
@@ -29,13 +31,15 @@ export function HeroSection() {
 
         {/* Subheadline - describe your product */}
         <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-          Expert software development and cloud solutions tailored to your business. From web and mobile apps to enterprise infrastructure, we build technology that drives growth.
+          We help startups, businesses, and brands build high-performing
+          websites, mobile applications, and digital solutions that drive real
+          results.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="#contact">
-            <LiquidCtaButton>Schedule a Consultation</LiquidCtaButton>
+          <Link href="/contact">
+            <LiquidCtaButton>Contact for Query </LiquidCtaButton>
           </Link>
           <Link
             href="#services"
@@ -95,15 +99,20 @@ export function HeroSection() {
                     <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
                   </svg>
                 ))}
-                <span className="text-slate-600 font-medium ml-1 text-sm">4.9</span>
+                <span className="text-slate-600 font-medium ml-1 text-sm">
+                  4.9
+                </span>
               </div>
               <p className="text-sm text-slate-500">
-                Trusted by <span className="text-slate-700 font-medium">50+ US Companies</span>
+                Trusted by{" "}
+                <span className="text-slate-700 font-medium">
+                  50+ US Companies
+                </span>
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -132,7 +132,7 @@ export function PortfolioSection() {
             Have a project in mind? Let&apos;s build something amazing together.
           </p>
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-block px-8 py-3 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
             Start Your Project
