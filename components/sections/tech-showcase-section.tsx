@@ -20,7 +20,7 @@ const techImages = [
     description: "Enterprise-grade data systems",
   },
   {
-    src: "/machine-learning-ai.png",
+    src: "/analytics-dashboard-dark-mode-with-charts-and-grap.jpg",
     title: "Machine Learning",
     description: "AI-powered intelligent solutions",
   },
