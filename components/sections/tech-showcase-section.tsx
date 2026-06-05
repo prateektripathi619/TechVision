@@ -20,7 +20,7 @@ const techImages = [
     description: "Enterprise-grade data systems",
   },
   {
-    src: "https://images.unsplash.com/photo-1677442d019cecf8ea23a0b8ed0876fbf39c8f03?q=80&w=1000&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1620712014215-c8ee92cf4251?q=80&w=1000&auto=format&fit=crop",
     title: "Machine Learning",
     description: "AI-powered intelligent solutions",
   },
@@ -53,7 +53,7 @@ export function TechShowcaseSection() {
         </motion.div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {techImages.map((image, index) => (
             <motion.div
               key={image.title}
@@ -63,7 +63,7 @@ export function TechShowcaseSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white hover:border-blue-300 hover:shadow-lg transition-all duration-300"
             >
-              <div className="aspect-video relative overflow-hidden">
+              <div className="aspect-square relative overflow-hidden">
                 <Image
                   src={image.src}
                   alt={image.title}
@@ -91,7 +91,7 @@ export function TechShowcaseSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 pt-16 border-t border-slate-200"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <h4 className="font-heading font-semibold text-slate-900 mb-4">Frontend</h4>
               <p className="text-sm text-slate-600 space-y-2">
