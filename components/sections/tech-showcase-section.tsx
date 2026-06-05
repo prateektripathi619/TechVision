@@ -20,7 +20,7 @@ const techImages = [
     description: "Enterprise-grade data systems",
   },
   {
-    src: "https://images.unsplash.com/photo-1620712014215-c8ee92cf4251?q=80&w=1000&auto=format&fit=crop",
+    src: "/machine-learning-ai.png",
     title: "Machine Learning",
     description: "AI-powered intelligent solutions",
   },
