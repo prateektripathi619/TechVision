@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/ui/navbar"
 import { HeroSection } from "@/components/sections/hero-section"
-import { ImpactSection } from "@/components/sections/impact-section"
 import { FeaturesSection } from "@/components/sections/features-section"
 import { PortfolioSection } from "@/components/sections/portfolio-section"
 import { TechShowcaseSection } from "@/components/sections/tech-showcase-section"
@@ -12,7 +11,6 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <ImpactSection />
       <FeaturesSection />
       <PortfolioSection />
       <TechShowcaseSection />
