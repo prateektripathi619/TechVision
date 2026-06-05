@@ -19,6 +19,16 @@ const techImages = [
     title: "Data Infrastructure",
     description: "Enterprise-grade data systems",
   },
+  {
+    src: "https://images.unsplash.com/photo-1677442d019cecf8ea23a0b8ed0876fbf39c8f03?q=80&w=1000&auto=format&fit=crop",
+    title: "Machine Learning",
+    description: "AI-powered intelligent solutions",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop",
+    title: "App Development",
+    description: "Native & cross-platform mobile apps",
+  },
 ]
 
 export function TechShowcaseSection() {
@@ -43,7 +53,7 @@ export function TechShowcaseSection() {
         </motion.div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {techImages.map((image, index) => (
             <motion.div
               key={image.title}
@@ -81,7 +91,7 @@ export function TechShowcaseSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 pt-16 border-t border-slate-200"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div>
               <h4 className="font-heading font-semibold text-slate-900 mb-4">Frontend</h4>
               <p className="text-sm text-slate-600 space-y-2">
@@ -98,6 +108,18 @@ export function TechShowcaseSection() {
               <h4 className="font-heading font-semibold text-slate-900 mb-4">Infrastructure</h4>
               <p className="text-sm text-slate-600 space-y-2">
                 AWS, Google Cloud, Azure, Docker, Kubernetes
+              </p>
+            </div>
+            <div>
+              <h4 className="font-heading font-semibold text-slate-900 mb-4">Machine Learning</h4>
+              <p className="text-sm text-slate-600 space-y-2">
+                TensorFlow, PyTorch, OpenAI, LangChain, Scikit-learn
+              </p>
+            </div>
+            <div>
+              <h4 className="font-heading font-semibold text-slate-900 mb-4">Mobile Apps</h4>
+              <p className="text-sm text-slate-600 space-y-2">
+                React Native, Flutter, Swift, Kotlin, Firebase
               </p>
             </div>
           </div>
