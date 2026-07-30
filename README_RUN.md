@@ -1,4 +1,4 @@
-# 🎯 How to Run Your Professional TechVision Website
+# 🎯 How to Run Your Professional Devcube Website
 
 ## ⚡ Quick Start (Easiest Way)
 
@@ -18,7 +18,7 @@
 
 ### Step 2: Navigate to Project
 ```bash
-cd d:\TechVision.worktrees\agents-professional-theme-update
+cd d:\Devcube.worktrees\agents-professional-theme-update
 ```
 
 ### Step 3: Install Dependencies

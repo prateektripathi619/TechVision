@@ -1,5 +1,5 @@
 @echo off
-cd /d D:\TechVision
+cd /d D:\Devcube
 
 echo === Step 1: Check Git Status ===
 git status

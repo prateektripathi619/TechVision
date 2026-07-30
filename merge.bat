@@ -3,7 +3,7 @@ REM Merge script for professional theme update
 
 echo.
 echo ============================================
-echo   TechVision - Professional Theme Merge
+echo   Devcube - Professional Theme Merge
 echo ============================================
 echo.
 
@@ -17,15 +17,15 @@ if errorlevel 1 (
 echo ✓ Git found
 
 REM Get current branch
-for /f "tokens=*" %%i in ('cd D:\TechVision && git rev-parse --abbrev-ref HEAD 2^>nul') do set CURRENT_BRANCH=%%i
+for /f "tokens=*" %%i in ('cd D:\Devcube && git rev-parse --abbrev-ref HEAD 2^>nul') do set CURRENT_BRANCH=%%i
 echo Current branch: %CURRENT_BRANCH%
 
 REM Navigate to main worktree
 echo.
 echo [1/6] Navigating to main worktree...
-cd /d D:\TechVision
+cd /d D:\Devcube
 if errorlevel 1 (
-    echo ❌ Failed to navigate to D:\TechVision
+    echo ❌ Failed to navigate to D:\Devcube
     pause
     exit /b 1
 )
@@ -96,7 +96,7 @@ echo Your professional theme update has been
 echo successfully merged to the main branch!
 echo.
 echo Next steps:
-echo 1. Visit: https://github.com/prateektripathi619/TechVision
+echo 1. Visit: https://github.com/prateektripathi619/Devcube
 echo 2. You can delete the topic branch if desired
 echo.
 pause
