@@ -2,11 +2,11 @@
 
 ## Automated Merge Script
 
-Run this in your **main project folder** (D:\TechVision):
+Run this in your **main project folder** (D:\Devcube):
 
 ```bash
 # Step 1: Make sure you're in the main worktree
-cd D:\TechVision
+cd D:\Devcube
 
 # Step 2: Check current branch
 git branch -a
@@ -46,7 +46,7 @@ git push origin main
 
 1. **Open Command Prompt** and navigate to main folder:
    ```
-   cd D:\TechVision
+   cd D:\Devcube
    ```
 
 2. **Switch to main branch:**
@@ -78,7 +78,7 @@ git push origin main
 
 ### **Option B: Using VS Code (Easiest)**
 
-1. Open VS Code with the main folder (D:\TechVision)
+1. Open VS Code with the main folder (D:\Devcube)
 2. Click **Source Control** (left sidebar)
 3. Click the **branch** button at bottom (currently showing main)
 4. Select **agents-professional-theme-update** to see the changes
@@ -91,7 +91,7 @@ git push origin main
 
 ### **Option C: GitHub Web Interface**
 
-1. Go to https://github.com/prateektripathi619/TechVision
+1. Go to https://github.com/prateektripathi619/Devcube
 2. Click **Pull requests** tab
 3. Click **New pull request**
 4. Set:

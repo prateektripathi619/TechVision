@@ -29,7 +29,7 @@ export function FooterSection() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="font-display text-xl font-semibold text-slate-900">
-              TechVision
+              Devcube
             </Link>
             <p className="mt-4 text-sm text-slate-600 max-w-xs">
               Expert technology solutions for modern businesses. Transform your digital vision.
@@ -81,7 +81,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-600">© {new Date().getFullYear()} TechVision. All rights reserved.</p>
+          <p className="text-sm text-slate-600">© {new Date().getFullYear()} Devcube. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-slate-600 hover:text-blue-600 transition-colors" aria-label="GitHub">
               <Github className="w-5 h-5" />

@@ -1,9 +1,9 @@
 @echo off
-REM Fix script for TechVision project
+REM Fix script for Devcube project
 
 echo.
 echo ============================================
-echo   TechVision - Project Fix Script
+echo   Devcube - Project Fix Script
 echo ============================================
 echo.
 
