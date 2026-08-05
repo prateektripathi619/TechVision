@@ -11,22 +11,23 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Liquid Metal Buttons | Premium UI Components",
+  title: "DevCube",
   description:
     "A collection of premium button components featuring animated liquid metal borders powered by Paper Shaders.",
   generator: "v0.app",
   icons: {
+    // Use placeholder files in `public/` so a logo appears immediately.
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/placeholder-logo.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/placeholder-logo.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/placeholder-logo.svg",
         type: "image/svg+xml",
       },
     ],
