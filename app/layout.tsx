@@ -19,21 +19,21 @@ export const metadata: Metadata = {
     // Use placeholder files in `public/` so a logo appears immediately.
     icon: [
       {
-        url: "/placeholder-logo.png",
+        url: "/devcube.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/placeholder-logo.png",
+        url: "/devcube.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/placeholder-logo.svg",
+        url: "/devcube.png",
         type: "image/svg+xml",
       },
     ],
     apple: "/apple-icon.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
