@@ -16,7 +16,9 @@ export default function ContactPage() {
     serviceType: '',
     description: ''
   })
-  const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [submitError, setSubmitError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -24,25 +26,43 @@ export default function ContactPage() {
       ...prev,
       [name]: value
     }))
+    setSubmitStatus('idle')
+    setSubmitError('')
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Create mailto link with form data
-    const mailtoLink = `mailto:prateek@gmail.com?subject=New Project Inquiry from ${formData.name}&body=Name: ${formData.name}%0DEmail: ${formData.email}%0DPhone: ${formData.phone}%0DCompany: ${formData.company}%0DService Required: ${formData.serviceType}%0D%0DProject Details:%0D${formData.description}`
-    window.location.href = mailtoLink
-    setSubmitted(true)
-    setTimeout(() => {
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+    setSubmitError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'We could not send your inquiry. Please try again.')
+      }
+
+      setSubmitStatus('success')
       setFormData({ name: '', email: '', phone: '', company: '', serviceType: '', description: '' })
-      setSubmitted(false)
-    }, 2000)
+    } catch (error) {
+      setSubmitStatus('error')
+      setSubmitError(error instanceof Error ? error.message : 'We could not send your inquiry. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'prateek@gmail.com',
-      href: 'mailto:prateek@gmail.com',
+      value: 'software@devcube.in',
+      href: 'mailto:software@devcube.in',
       description: 'Get in touch via email'
     },
     {
@@ -219,14 +239,14 @@ export default function ContactPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                disabled={submitted}
+                disabled={isSubmitting}
                 className="w-full py-3 px-6 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shadow-lg hover:shadow-xl"
               >
                 <Send className="w-4 h-4" />
-                {submitted ? 'Message Sent!' : 'Send Project Details'}
+                {isSubmitting ? 'Sending...' : 'Send Project Details'}
               </motion.button>
 
-              {submitted && (
+              {submitStatus === 'success' && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -234,6 +254,12 @@ export default function ContactPage() {
                 >
                   Thank you! Your inquiry has been sent. We&apos;ll review your details and get back to you shortly.
                 </motion.div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div role="alert" className="p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 text-center">
+                  {submitError}
+                </div>
               )}
             </form>
           </motion.div>
