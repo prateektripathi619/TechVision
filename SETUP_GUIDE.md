@@ -85,6 +85,17 @@ npm run start    # Start production server
 npm run lint     # Run linter
 ```
 
+## Contact Form Email Notifications
+
+Project inquiries are sent to `software@devcube.in` through Resend. Configure these environment variables in `.env.local` for local development and in your deployment environment for production:
+
+```env
+RESEND_API_KEY=your_resend_api_key
+CONTACT_FROM_EMAIL=your_verified_sender_email
+```
+
+Verify the sender domain with Resend before using it in production. The contact form reports an error if email delivery is not configured or the provider rejects a message.
+
 ---
 
 ## Color Scheme
