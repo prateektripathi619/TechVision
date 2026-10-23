@@ -59,8 +59,27 @@ export async function POST(request: Request) {
     })
 
     if (!response.ok) {
-      console.error(`Contact email provider returned status ${response.status}.`)
-      return Response.json({ error: 'We could not send your inquiry. Please try again shortly.' }, { status: 502 })
+      let providerMessage: string | undefined
+
+      try {
+        const providerError: unknown = await response.json()
+        if (
+          typeof providerError === 'object' &&
+          providerError !== null &&
+          'message' in providerError &&
+          typeof providerError.message === 'string'
+        ) {
+          providerMessage = providerError.message.slice(0, 500)
+        }
+      } catch {
+        // Keep the generic message if the email provider did not return JSON.
+      }
+
+      console.error(`Contact email provider returned status ${response.status}.`, providerMessage)
+      return Response.json(
+        { error: providerMessage || 'We could not send your inquiry. Please try again shortly.' },
+        { status: 502 },
+      )
     }
   } catch (error) {
     console.error('Contact email provider request failed.', error)
