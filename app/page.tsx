@@ -8,7 +8,7 @@ import { FooterSection } from "@/components/sections/footer-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-slate-900">
       <Navbar />
       <HeroSection />
       <FeaturesSection />
