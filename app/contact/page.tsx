@@ -61,22 +61,22 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'software@devcube.in',
-      href: 'mailto:software@devcube.in',
+      value: 'Sales@devcube.in',
+      href: 'mailto:Sales@devcube.in',
       description: 'Get in touch via email'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 7208124621',
-      href: 'tel:+917208124621',
+      value: '+91 92862 91375',
+      href: 'tel:+919286291375',
       description: 'Call us directly'
     },
     {
       icon: MessageCircle,
       label: 'WhatsApp',
-      value: '+91 7208124621',
-      href: 'https://wa.me/917208124621',
+      value: '+91 92862 91375',
+      href: 'https://wa.me/919286291375',
       description: 'Chat with us on WhatsApp'
     },
     {
