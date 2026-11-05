@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export function CtaSection() {
   return (
-    <section id="contact" className="px-6 py-24 bg-gradient-to-r from-blue-900/30 to-indigo-900/30 relative overflow-hidden">
+    <section id="contact" className="px-4 sm:px-6 py-16 sm:py-20 md:py-24 bg-gradient-to-r from-blue-900/30 to-indigo-900/30 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900/50" />
       {/* Grid pattern */}
@@ -41,13 +41,13 @@ export function CtaSection() {
         }}
       />
 
-      <div className="max-w-3xl mx-auto text-center relative z-10">
+      <div className="max-w-3xl mx-auto text-center relative z-10 px-2">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-display text-4xl md:text-5xl font-bold text-white mb-6"
+          className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-2"
         >
           Ready to transform your business?
         </motion.h2>
@@ -56,7 +56,7 @@ export function CtaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-slate-300 mb-10 text-balance"
+          className="text-sm sm:text-base md:text-lg text-slate-300 mb-8 sm:mb-10 text-balance px-2"
         >
           Let&apos;s discuss how our expertise can solve your technology challenges. Schedule a free consultation with our team today.
         </motion.p>
@@ -65,15 +65,17 @@ export function CtaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
-          <Link href="/contact">
-            <LiquidCtaButton>Contact for Query</LiquidCtaButton>
-          </Link>
-          <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+          <motion.div className="w-full sm:w-auto" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300 }}>
+            <Link href="/contact">
+              <LiquidCtaButton>Contact for Query</LiquidCtaButton>
+            </Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300 }} className="w-full sm:w-auto">
             <Link
               href="#services"
-              className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-white hover:text-blue-300 transition-colors bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:shadow-lg hover:shadow-blue-500/20"
+              className="group flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-white hover:text-blue-300 transition-colors bg-white/10 backdrop-blur-sm rounded-full border border-white/20 hover:bg-white/20 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <span>View Our Services</span>
               <motion.div

@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function FeaturesSection() {
   return (
-    <section id="services" className="px-6 py-24 bg-slate-900 relative overflow-hidden">
+    <section id="services" className="px-4 sm:px-6 py-16 sm:py-20 md:py-24 bg-slate-900 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900/50" />
       {/* Grid pattern */}
@@ -40,14 +40,14 @@ export function FeaturesSection() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10 px-2">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -56,14 +56,14 @@ export function FeaturesSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <p className="text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Services</p>
+            <p className="text-xs sm:text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Services</p>
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-display text-3xl md:text-4xl font-bold text-white mb-4"
+            className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-2"
           >
             Comprehensive solutions for every need
           </motion.h2>
@@ -72,13 +72,13 @@ export function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-slate-300 max-w-xl mx-auto text-balance"
+            className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto text-balance px-2"
           >
             From concept to deployment, we deliver end-to-end technology solutions tailored to your business goals.
           </motion.p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {/* Service 1 - Web Development */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -143,7 +143,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -193,7 +193,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -244,7 +244,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -294,7 +294,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -344,7 +344,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -394,7 +394,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"
@@ -445,7 +445,7 @@ export function FeaturesSection() {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"
               />
-              <CardContent className="p-6 flex flex-col h-full relative z-10">
+              <CardContent className="p-4 sm:p-5 md:p-6 flex flex-col h-full relative z-10">
                 <div className="flex items-center gap-3 mb-3">
                   <motion.div
                     className="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center border border-blue-400/30 group-hover:bg-blue-500/30 group-hover:border-blue-400/50 transition-all duration-300"

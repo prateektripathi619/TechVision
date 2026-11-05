@@ -34,7 +34,7 @@ const projects = [
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="px-6 py-24 bg-slate-800 relative overflow-hidden">
+    <section id="portfolio" className="px-4 sm:px-6 py-16 sm:py-20 md:py-24 bg-slate-800 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900/30" />
       {/* Grid pattern */}
@@ -68,14 +68,14 @@ export function PortfolioSection() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 px-2">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -84,14 +84,14 @@ export function PortfolioSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <p className="text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Portfolio</p>
+            <p className="text-xs sm:text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Portfolio</p>
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-display text-4xl md:text-5xl font-bold text-white mb-4"
+            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 px-2"
           >
             Our Work in Action
           </motion.h2>
@@ -100,14 +100,14 @@ export function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-slate-300 max-w-2xl mx-auto text-balance text-lg"
+            className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto text-balance px-2"
           >
             Explore the diverse projects we&apos;ve delivered across government, healthcare, and hospitality sectors.
           </motion.p>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -165,7 +165,7 @@ export function PortfolioSection() {
                   </div>
 
                   {/* Project Content */}
-                  <div className="p-6 relative z-10">
+                  <div className="p-4 sm:p-5 md:p-6 relative z-10">
                     {/* Category Badge */}
                     <motion.div
                       className="inline-block mb-3"

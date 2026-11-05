@@ -33,7 +33,7 @@ const techImages = [
 
 export function TechShowcaseSection() {
   return (
-    <section id="technology" className="px-6 py-24 bg-slate-900 relative overflow-hidden">
+    <section id="technology" className="px-4 sm:px-6 py-16 sm:py-20 md:py-24 bg-slate-900 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900/30" />
       {/* Grid pattern */}
@@ -67,14 +67,14 @@ export function TechShowcaseSection() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 px-2">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -83,14 +83,14 @@ export function TechShowcaseSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <p className="text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Technology</p>
+            <p className="text-xs sm:text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Technology</p>
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-display text-4xl md:text-5xl font-bold text-white mb-4"
+            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 px-2"
           >
             Modern tech stack for enterprise scale
           </motion.h2>
@@ -99,14 +99,14 @@ export function TechShowcaseSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-slate-300 max-w-2xl mx-auto text-balance text-lg"
+            className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto text-balance px-2"
           >
             We build with cutting-edge technologies and proven architectural patterns to deliver robust, scalable solutions.
           </motion.p>
         </motion.div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {techImages.map((image, index) => (
             <motion.div
               key={image.title}
