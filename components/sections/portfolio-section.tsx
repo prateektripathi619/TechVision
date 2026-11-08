@@ -27,7 +27,7 @@ const projects = [
     description: "Luxury resort booking platform with dynamic pricing, availability management, and integrated payment processing.",
     category: "Hospitality",
     tech: ["Next.js", "MongoDB", "Stripe", "AWS Storage"],
-    url: "https://www.shyamkum.com/",
+    url: "https://www.shyamkum.in/",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/httpswww.shyamkum.com-NvnFgwXSJwx5zGXhv5pfHcYwOalcG1.png",
   },
 ]
